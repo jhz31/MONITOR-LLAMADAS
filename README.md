@@ -109,11 +109,11 @@ En la web de administración de cada teléfono, pestaña **Características → 
 
 | Extensión | Persona |
 |---|---|
-| 1145 | Líder Soporte - Esteban Preciado |
-| 1144 | Practicante - Jhon Quejada |
-| 1146 | Líder Infraestructura - William Rincón |
-| 1143 | Practicante - Elber Piza |
-| 1142 | Líder Sistemas - Isabella González |
+| 1145 | Líder Soporte - NOMBRE DE LA PERSONA |
+| 1144 | Practicante - NOMBRE DE LA PERSONAa |
+| 1146 | Líder Infraestructura - NOMBRE DE LA PERSONA |
+| 1143 | Practicante - NOMBRE DE LA PERSONA |
+| 1142 | Líder Sistemas - NOMBRE DE LA PERSONA |
 | 1128 | Grupo — Área de IDT (extensión que agrupa el timbrado simultáneo) |
 
 ## Estructura del repositorio
