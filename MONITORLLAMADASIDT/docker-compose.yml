@@ -1,0 +1,18 @@
+services:
+  monitor-llamadas:
+    build: .
+    image: monitor-llamadas-idt:1.0
+    container_name: monitor_llamadas_idt
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      # El historial (llamadas.db) queda en esta carpeta del SERVIDOR,
+      # fuera del contenedor. Si el contenedor se borra o se actualiza
+      # la imagen, el historial no se pierde.
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
